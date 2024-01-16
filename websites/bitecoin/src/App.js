@@ -14,6 +14,14 @@ function App() {
     const graphRef = useRef(null);
 
     useEffect(() => {
+        if (graphRef.current) {
+            const forcedReflow = graphRef.current.clientHeight; // Force reflow
+            setGraphHeight(graphRef.current.clientHeight);
+            console.log("New graph height:", graphRef.current.clientHeight);
+        }
+    }, [graphRef.current]);
+
+    useEffect(() => {
         const handleResize = () => {
             if (containerRef.current) {
                 const forcedReflow = containerRef.current.offsetHeight; // Force reflow
