@@ -2,6 +2,7 @@ import './App.css';
 import { Line, LineChart, Tooltip, XAxis, YAxis} from "recharts";
 import rawData from './price.json';
 import jul_icon from './JULC.png';
+import om_icon from './olympique-de-marseille.svg';
 import {useEffect, useRef, useState} from "react";
 
 function App() {
@@ -47,10 +48,8 @@ function App() {
 
     const prices = rawData.Data.Data
         .map(obj  => {
-            return {
-                price: obj.open
-            }
-        });
+            return { price: obj.open }
+        })
 
     const updateGraphValues = (i) => {
         const now = new Date();
@@ -100,6 +99,7 @@ function App() {
                 <div className={"App-title"}>
                     <img src={jul_icon} width={55} height={70} style={{ transform: `rotate(${graphValues.rotation * 30}deg)`}} alt={"JUL DE TP"}/>
                     <h1>JUL-USDC</h1>
+                    <img src={om_icon} width={60 + graphValues.rotation * 10} height={80 + graphValues.rotation * 20}  alt={"ALLEZ L'OM"}/>
                 </div>
                 <section className={"graph-container"}>
                     <div ref={graphRef} style={{position: "relative"}}>

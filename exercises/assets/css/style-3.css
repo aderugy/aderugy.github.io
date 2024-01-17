@@ -1,0 +1,114 @@
+/*  ============= WEB BROWSER RESETS ============ */
+* {
+    margin: 0;
+    padding: 0;
+    border: none
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
+
+html {
+    height: 100%;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px
+}
+
+body {
+    background-color: #48d6d2;
+    color: #e6ecff;
+    line-height: 1.5;
+    min-height: 100vh
+}
+
+@media (max-width: 767px) {
+    body {
+        text-rendering: optimizeSpeed
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        text-rendering: optimizeLegibility
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit
+}
+/* ====== PADDING AROUND WEB PAGE BODY CONTENT ======  */
+/* Desktops */
+@media (min-width: 768px) {
+   section { padding: 4% 20% }
+}
+
+/* Mobiles */
+@media (max-width: 767px) {
+   section { padding: 5% 5% }
+}
+section *:last-child { margin-bottom: 0 !important }
+
+h2 {
+    font-size: 56px;
+    margin-bottom: 4px;
+}
+
+h3 {
+    font-size: 32px;
+    margin-bottom: 4px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 16px
+}
+
+.section-1 {
+    background-color: #1f306e;
+    color: #e6ecff;
+    padding-top: 64px;
+    padding-bottom: 64px
+}
+
+.section-2 {
+    background-color: #c7417b;
+    color: #1f306e;
+    padding-top: 64px;
+    padding-bottom: 64px
+}
+
+.section-3 {
+    background-color: #264e70;
+    color: #e6ecff;
+    padding-top: 64px;
+    padding-bottom: 64px
+}
+
+.section-4 {
+    background-color: #264e70;
+    color: #e6ecff;
+    padding-top: 64px;
+    padding-bottom: 64px
+}
+
+.section-5 {
+    background-color: #1f306e;
+    color: #e6ecff;
+    padding-top: 64px;
+    padding-bottom: 64px
+}
