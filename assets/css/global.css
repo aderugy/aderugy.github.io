@@ -13,7 +13,6 @@
 
 html {
     height: 100%;
-    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
     scroll-behavior: smooth;
@@ -21,9 +20,11 @@ html {
 }
 
 body {
-    background-color: #fdebd3;
+    background-color: rgba(0, 0, 0, 0);
     line-height: 1.5;
-    min-height: 100vh
+    min-height: 100vh;
+
+    user-select: none;
 }
 
 @media (max-width: 767px) {
@@ -54,38 +55,106 @@ select {
 /* ================= ENDS ================ */
 
 body {
-    text-align: center;
-    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    width: 100%;
+    height: 70px;
+
+    margin: 10px;
+}
+
+.nav-element {
+    height: 80%;
+    padding: 0 2%;
+    margin: 0 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 1.8em;
+
+    letter-spacing: 1.6px;
+    color: white;
+}
+
+.nav-element-contact {
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+
+    border: 3px solid white;
+    border-radius: 4px;
+    padding: 25px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 100px;
 }
 
 h1 {
-    color: #264e70;
-    font-size: 78px;
-    font-weight: normal;
-    letter-spacing: -2px;
-    margin-bottom: 12px;
-    line-height: 1.2;
+    color: white;
+    font-size: 2.5em;
+    font-weight: 700;
 }
 
 h2 {
-    color: #264e70;
-    font-size: 42px;
-    letter-spacing: 6px;
-    margin-bottom: 48px;
-    line-height: 1.2;
+    color: white;
+    font-size: 1.5em;
+    opacity: 0.7;
 }
 
-h3 {
-    color: #264e70;
-    font-size: 24px;
-    margin-top: 48px;
-    margin-bottom: 20px;
-    line-height: 1.2;
-    text-transform: uppercase;
+.background-container {
+    /* Full size */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    /* Background image with blur and darkening */
+    background: url('../images/background.jpg') center/cover no-repeat;
+    filter: blur(2px);
+    z-index: -1;
 }
 
-p {
-    color: #264e70;
-    font-size: 20px;
-    margin-bottom: 16px;
+.background-container::after {
+    /* Full size */
+    content: '';
+    position: absolute;
+    top: -10px; /* Adjust as needed */
+    left: -10px; /* Adjust as needed */
+    width: calc(100vw + 20px); /* Adjust based on the negative margins */
+    height: calc(100vh + 20px);
+
+    /* Semi-transparent black overlay */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust opacity as needed */
+    z-index: 1;
+    /* Above the background image but below the content */
 }
