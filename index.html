@@ -1,46 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arthur de Rugy | Full-stack developer</title>
-    <meta name="description" content="Welcome to my website that showcases some of my digital creations.">
+    <title>Arthur de Rugy 74537 | Accueil</title>
+    <meta name="description" content="Portfolio Arthur de Rugy">
+
+    <!-- Preload large image -->
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://lunevedy.com/assets/2.0/css/lunevedy.min.css">
     <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 icons. Delete if not using. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Line Awesome thin icons. Delete if not using. -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&family=Space+Mono:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <div class="background-container">
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0" height="0">
-            <defs>
-                <filter id="cutout-filter">
-                    <feFlood flood-color="black" result="outside-color" />
-                    <feComposite operator="out" in="SourceGraphic" in2="outside-color" result="cutout" />
-                </filter>
-            </defs>
-        </svg>
+
+<body cz-shortcut-listen="true">
+
+<!-- menu and 'hero block' header -->
+<header class="theme-dark hero-bg text-center-desktop text-center-mobile desktop-min-height-90vh">
+
+    <div class="container-text">
+        <h1 class="text-shadow">Full-stack, DevOps, Cloud.</h1>
+        <h2 class="text-shadow">Meet Arthur, freelance developer.</h2>
     </div>
-            
 
-    <nav>
-        <div class="nav-element"><p>ABOUT</p></div>
-        <div class="nav-element"><p>WORK</p></div>
-        <div class="nav-element nav-element-contact"><p>CONTACT</p></div>
-    </nav>
-    <header>
-        <h1>Hi, I'm Arthur !</h1>
-        <h2>Full-stack web developer</h2>
+    <div class="container-btn">
+        <a href="https://github.com/aderugy" class="btn btn-solid"><i class="fa-brands fa-github-square"></i><span>My GitHub</span></a>
+        <a href="https://www.linkedin.com/in/arthur-derugy/" class="btn btn-outline"><i class="fa-brands fa-linkedin-in"></i><span>My Linkedin</span></a>
+    </div>
 
-        <!-- <h3>Sample Web Pages</h3>
-        <p><a href="exercises/page-1.html">A Tale of Two Cities</a></p>
-        <p><a href="exercises/page-2.html">Purple Rain</a></p>
-        <p><a href="exercises/page-3.html">Web Page with Sections</a></p> -->
-    </header>
-</body>
+    <div class="container-media">
+        <img src="./assets/img/background.jpg" alt="Placeholder image">
+    </div>
 
-</html>
+    <div class="container-overlay"></div>
+
+</header>
+
+<!-- main content with sections -->
+<main>
+    <section class="theme-light section-selector-1 w-1356px">
+
+        <div class="col-1 text-center w-820px">
+            <h2>My AWESOME projects</h2>
+            <h3>Leverage agile frameworks, like Bootstrap, Angular and Microsoft Edge to provide a robust synopsis for high level overviews to foster collaborative thinking.</h3>
+        </div>
+
+        <!-- Begin three-column flexbox grid -->
+        <div class="flex-cols-3">
+
+            <div class="project col-3">
+                <figure>
+                    <img src="./assets/img/project-crypto-wallet.jpg" onclick="window.location='./projects/betterthanbinance/index.html';" alt="Placeholder image">
+                </figure>
+                <h3>BTB (Better than Binance)</h3>
+                <p>Leave Binance and Coinbase and get my own wallet, so I can tax all your transactions.</p>
+            </div>
+
+            <div class="project col-3">
+                <figure>
+                    <img src="./assets/img/project-smoothie.jpg" onclick="window.location='./projects/smoothies/index.html';" alt="Placeholder image">
+                </figure>
+                <h3>Smooth Smoothies</h3>
+                <p>Smooth websmooth to provide the smoothiest experience about smooth smoothies.</p>
+            </div>
+
+            <div class="project col-3">
+                <figure>
+                    <img src="./assets/img/project-fashion.jpg" onclick="window.location='./projects/fashion/index.html';" alt="Placeholder image">
+                </figure>
+                <h3>Snazzy Fashion</h3>
+                <p>We will sell you a trash bag for 200 euros because it's fashion. Even this website was overpriced.</p>
+            </div>
+
+            <div class="project col-3">
+                <figure>
+                    <img src="./assets/img/project-hero.png" onclick="window.location='./projects/project-hero/index-1.html';" alt="Placeholder image">
+                </figure>
+                <h3>Hero blocks</h3>
+                <p>I really needed that website because I can't use MUI to create a responsive grid yet.</p>
+            </div>
+
+            <div class="project col-3">
+                <figure>
+                    <img src="./assets/img/project-multi-col.png" onclick="window.location='./projects/project-multi-column/index.html';" alt="Placeholder image">
+                </figure>
+                <h3>Lots of columns.</h3>
+                <p>Who doesn't like columns ? Even Romans put some everywhere.</p>
+            </div>
+
+            <div class="project col-3">
+                <figure>
+                    <img src="./assets/img/project-store.png" onclick="window.location='./projects/store/index.html';" alt="Placeholder image">
+                </figure>
+                <h3>Buy nice books about Web !</h3>
+                <p>So you can create your own books marketplace and contribute to my Ponzi scheme.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="theme-light section-selector-1 cols-2-half flex-row-reverse">
+
+        <div class="col-2 col-text">
+
+            <h2>Get in touch</h2>
+            <p>With me as your developer, you will make a shit ton of money from your websites (if you pay me well). Remain polite I have your email address.</p>
+
+            <form id="email-form" name="email-form" charset="utf-8" method="post" action="https://formspree.io/f/xbjnyajd">
+                <div class="form-row">
+                    <label for="full_name">Full Name</label>
+                    <input type="text" name="full_name" id="full_name" required="">
+                </div>
+
+                <div class="form-row">
+                    <label for="email_address">Email</label>
+                    <input data-validate="email" aria-required="true" type="email" name="email_address" id="email_address" required="">
+                </div>
+
+                <div class="form-row">
+                    <label for="form_message">How can we help you?</label>
+                    <textarea aria-required="true" rows="3" name="form_message" id="form_message" required=""></textarea>
+                </div>
+
+                <div class="form-footer">
+                    <button id="btn-submit" class="btn-solid" type="submit" data-validate="submit" aria-label="Send message"><span>Send</span><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </form>
+
+        </div>
+
+
+        <div class="col-2 col-visual">
+            <figure>
+                <img src="https://ew.com/thmb/bnD3vM6l_J4qBBfVYY3YJDesJgc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/shutterstock_editorial_11880795a-b43db32d715c4becaaf84c1ba20e4bea.jpg" alt="Placeholder image">
+            </figure>
+        </div>
+
+
+
+        <!-- section ends here -->
+
+
+
+    </section>
+
+    <!-- section ends here -->
+
+
+
+
+</main>
+
+<!-- footer starts here -->
+<footer class="theme-dark footer-3">
+
+    <!-- Begin four-column flexbox grid -->
+    <div class="footer-cols-3 w-1356px">
+
+        <div class="col-3" style="display: flex; justify-content: center; height: 100%;">
+            <h2>ArthurLaVoiture</h2>
+            <p>I AM THE BEST FREELANCE HIRE ME NOW THAT'S NOT A QUESTION.</p>
+        </div>
+
+        <div class="col-3">
+            <h3>Useless Links</h3>
+            <ul class="footer-links">
+                <li><a href="https://fr.wikipedia.org/wiki/Camembert_(fromage)">Camembert</a></li>
+                <li><a href="https://bing.com">Best web browser</a></li>
+                <li><a href="https://www.revenue.ie/en/starting-a-business/paying-your-tax/index.aspx">Nightmare link</a></li>
+                <li><a href="https://www.google.com/maps/place/Le+XV+-+Bar,+Planches+%26+Viandes/@48.8072556,2.1286931,17z/data=!3m1!4b1!4m6!3m5!1s0x47e67d11cf2eacdf:0xbc8754d2f15fc4f5!8m2!3d48.8072521!4d2.131268!16s%2Fg%2F11qqp71b26?entry=ttu">Good pub in Versailles</a></li>
+            </ul>
+        </div>
+
+        <div class="col-3">
+            <h3>Contact</h3>
+            <ul class="fa-ul footer-links">
+                <li><span class="fa-li"><i class="fa-solid fa-location-dot"></i></span> <address>108 Longboat Quay South,<br>Ireland. D02 VX27.</address></li>
+                <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span> <a href="tel:+33768525840">+33 7 68 52 58 40</a></li>
+                <li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span> <a href="mailto:derugy.arthur@gmail.com"></a>derugy.arthur@gmail.com</li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- End three-column flexbox grid -->
+    <div class="copyright">
+        <p>Copyright © 2023 ArthurLaVoiture Limited. All rights reserved.</p>
+    </div>
+
+</footer>
+<!-- footer ends here -->
+
+
+<script src="https://lunevedy.com/assets/js/lunevedy.js"></script>
+<!-- JavaScript for Cookie Consent Popup Message -->
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+    window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+                "background": "#000"
+            },
+            "button": {
+                "background": "#f1d600"
+            }
+        },
+        "content": {
+            "href": "https://en.wikipedia.org/wiki/Privacy"
+        }
+    });
+</script>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8B0XG9BKXW"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8B0XG9BKXW');
+</script>
+
+
+
+</body></html>
